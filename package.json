@@ -1,17 +1,23 @@
 {
   "name": "robots_4",
-  "homepage": "https://aunhengly.github.io/robots_4-redux-pwa_testing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aunhengly.github.io/robots_4-redux-pwa_testing",
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^4.0.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-redux": "^8.0.1",
     "react-scripts": "^5.0.1",
+    "react-test-renderer": "^17.0.2",
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
@@ -35,7 +41,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -61,8 +67,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cfaester/enzyme-adapter-react-18": "^0.5.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "enzyme": "^3.11.0",
-    "jest": "^28.1.0"
+    "enzyme-to-json": "^3.6.2"
   }
 }
