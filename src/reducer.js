@@ -24,6 +24,11 @@ const initialStateRobots = {
    error: ''
 };
 
+// const initialStateRobots = {
+//    isPending: true,
+//    robots: []
+// };
+
 export const requestRobots = (state =initialStateRobots, action ={}) => {
    switch(action.type) {
       case REQUEST_ROBOTS_PENDING:
